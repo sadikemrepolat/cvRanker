@@ -1,0 +1,123 @@
+body,
+html {
+    height: 100%;
+    /* Sayfanın tamamını kaplaması için */
+    display: flex;
+    /* Flexbox ile dikey ortalama */
+    align-items: center;
+    /* Dikeyde ortalar */
+    justify-content: center;
+    /* Yatayda ortalar */
+    overflow: hidden;
+}
+
+.main-container {
+    width: 1300px;
+    height: 900px;
+    background-color: #f8f9fa;
+    /* Arka plan rengini açık gri yapmak */
+    border: 1px solid #ccc;
+    /* Hafif gri bir kenarlık ekler */
+    border-radius: 50px;
+    /* Köşeleri yuvarlatır */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif bir gölge ekler */
+    overflow: hidden;
+}
+
+.ust-baslik {
+    width: 100%;
+    height: 10%;
+    background-color: #d85604;
+
+}
+
+.alt-kisim {
+    width: 100%;
+    height: 90%;
+    background-color: #e9e9e9;
+    display: flex;
+    align-items: flex-start;
+    /* Üstten hizalar */
+    justify-content: flex-start;
+    /* Soldan hizalar */
+}
+
+.uploadfiles-area {
+    width: 400px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    /* Öğeleri dikey olarak hizalar */
+    align-items: flex-start;
+    /* Öğeleri sola hizalar */
+    justify-content: flex-start;
+    /* Öğeleri üstten alta hizalar */
+    margin: 40px 0 0 40px;
+    /* Üstten 50px boşluk ekler */
+}
+
+.ilanfile,
+.cvfile {
+    width: 300px;
+    height: 300px;
+    background-color: #fab68c;
+    border-radius: 50px;
+    border: 2px dashed #d85604;
+    margin-bottom: 30px;
+    /* Aralarına boşluk ekler */
+}
+
+.ranking-display {
+    width: 750px;
+    height: 740px;
+    background-color: #f8f8f8;
+    border-radius: 50px;
+    margin: 40px 0 0 20px;
+    margin-right: 40px;
+}
+
+
+.file-input {
+    display: none;
+}
+
+.drop-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.drop-area:hover {
+    background-color: #fae0cc;
+    overflow: hidden;
+}
+
+.upload-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #d85604;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #fa8c04;
+}

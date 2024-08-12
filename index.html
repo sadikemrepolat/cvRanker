@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="ust-baslik"></div>
+        <div class="alt-kisim">
+            <div class="uploadfiles-area">
+                <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+                    <div class="ilanfile">
+                        <input type="file" id="ilanfile-input" class="file-input" name="ilanfile" multiple>
+                        <div id="ilanfile-droparea" class="drop-area">İlan Sürükleyin veya dosya seçin</div>
+                    </div>
+                    <div class="cvfile">
+                        <input type="file" id="cvfile-input" class="file-input" name="cvfile" multiple>
+                        <div id="cvfile-droparea" class="drop-area">CV Sürükleyin veya dosya seçin</div>
+                    </div>
+                    <!-- Submit button form içerisine taşındı -->
+                    <div class="upload-button">
+                        <button type="submit">Dosyaları Yükle</button>
+                    </div>
+                </form>
+            </div>
+            <div class="ranking-display"></div>
+        </div>
+    </div>
+</body>
+
+</html>
